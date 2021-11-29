@@ -2,7 +2,23 @@
 <html>
   <head>
     <title>StarNotary DAPP</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+
+    <!-- Minified Cirrus CSS -->
+
+    <link rel="stylesheet" href="../css/cirrus.min.css" />
+    <!-- Import your other dependencies -->
   </head>
   <style>
     input {
@@ -13,23 +29,28 @@
   <body>
     <h1>StarNotary Token DAPP</h1>
 
-    <hr>
+    <hr />
 
-    <br>
-      <h1>Create a Star</h1>
-      <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
-      <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
-      <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
-      <br>
-      <hr>
-      <br>
-      <h1>Look up a Star</h1>
-      <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
-      <br><br><button onclick="App.lookUp()">Look Up a Star</button>
-      <hr>
-      <br>
-      <span id="status"></span>
-      <br>
+    <br />
+    <h1>Create a Star</h1>
+    <br /><label for="starName">Star Name:</label><input type="text" id="starName" /> <br /><label for="starId"
+      >Star ID:</label
+    ><input type="text" id="starId" /> <br /><br /><button id="createStar" onclick="App.createStar()">
+      Create Star
+    </button>
+    <br />
+    <hr />
+    <br />
+    <h1>Look up a Star</h1>
+    <br /><label for="name">Star ID:</label><input type="text" id="lookid" /> <br /><br /><button
+      onclick="App.lookUp()"
+    >
+      Look Up a Star
+    </button>
+    <hr />
+    <br />
+    <span id="status"></span>
+    <br />
     <script src="index.js"></script>
   </body>
 </html>
